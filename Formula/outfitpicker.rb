@@ -5,13 +5,13 @@
 class Outfitpicker < Formula
   desc "Interactive CLI to pick outfits from category folders"
   homepage "https://github.com/dh85/outfitpicker"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/dh85/outfitpicker/releases/download/v1.0.3/outfitpicker_Darwin_x86_64.tar.gz"
-      sha256 "36fad731f005d16584762136fc9ff5e5bd9fbe55649b5b87730dc92257789c28"
+      url "https://github.com/dh85/outfitpicker/releases/download/v1.0.4/outfitpicker_Darwin_x86_64.tar.gz"
+      sha256 "23b4f59c10d05385805644af0380a43d1093b01eb0301f2a6c74dbcbc222511c"
 
       def install
         bin.install "outfitpicker"
@@ -19,8 +19,8 @@ class Outfitpicker < Formula
       end
     end
     on_arm do
-      url "https://github.com/dh85/outfitpicker/releases/download/v1.0.3/outfitpicker_Darwin_arm64.tar.gz"
-      sha256 "200d9553cd5018a9eda06071210c9ed1203370cce89d195b0464d53420b9db38"
+      url "https://github.com/dh85/outfitpicker/releases/download/v1.0.4/outfitpicker_Darwin_arm64.tar.gz"
+      sha256 "3ec3e96633c555793f63924781c6fafe5f7ab890e517c7d601e0dc4fd8ae651b"
 
       def install
         bin.install "outfitpicker"
@@ -32,8 +32,8 @@ class Outfitpicker < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dh85/outfitpicker/releases/download/v1.0.3/outfitpicker_Linux_x86_64.tar.gz"
-        sha256 "589c8b2fc83f8732cedfc2654a70de7c5837f0f041365bc8ffc0865b831898b9"
+        url "https://github.com/dh85/outfitpicker/releases/download/v1.0.4/outfitpicker_Linux_x86_64.tar.gz"
+        sha256 "85cd5ff83284830b79dc25fb4289ac031af7be40e2db3606bffa289470a65478"
 
         def install
           bin.install "outfitpicker"
@@ -43,8 +43,8 @@ class Outfitpicker < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dh85/outfitpicker/releases/download/v1.0.3/outfitpicker_Linux_arm64.tar.gz"
-        sha256 "f9808a43f9fe5741958779fca361b30341e228fb43dfa1d6ee68abc9d54cd1ea"
+        url "https://github.com/dh85/outfitpicker/releases/download/v1.0.4/outfitpicker_Linux_arm64.tar.gz"
+        sha256 "6cd2188da5296dc1f4f57789d1a05799267b6e543124221d843c20653b809797"
 
         def install
           bin.install "outfitpicker"
