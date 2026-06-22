@@ -5,20 +5,20 @@
 class SpotifyPlaylist < Formula
   desc "CLI tool to display formatted Spotify playlists."
   homepage "https://github.com/dh85/spotify-playlist"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dh85/spotify-playlist/releases/download/v0.4.0/spotify-playlist_0.4.0_darwin_amd64.tar.gz"
-      sha256 "aa62bf78567b9f66c74c2e8de9a8851a3a119173c49b228e211dbeeb3499f79a"
+      url "https://github.com/dh85/spotify-playlist/releases/download/v0.5.0/spotify-playlist_0.5.0_darwin_amd64.tar.gz"
+      sha256 "c4f5c649b868ad2c2e615c9666b64211a254dd34cb248a386a481bbe0337c39e"
 
       define_method(:install) do
         bin.install "spotify-playlist"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dh85/spotify-playlist/releases/download/v0.4.0/spotify-playlist_0.4.0_darwin_arm64.tar.gz"
-      sha256 "1493c63cbf2f1a834d95c32ec37f48c404fb520bbe3c6f09a50ed65bbc203814"
+      url "https://github.com/dh85/spotify-playlist/releases/download/v0.5.0/spotify-playlist_0.5.0_darwin_arm64.tar.gz"
+      sha256 "b1fbb8b59de5df05197663dc5bb858980c23bddf1454f48e729936585a6bd050"
 
       define_method(:install) do
         bin.install "spotify-playlist"
@@ -28,15 +28,15 @@ class SpotifyPlaylist < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dh85/spotify-playlist/releases/download/v0.4.0/spotify-playlist_0.4.0_linux_amd64.tar.gz"
-      sha256 "ed829424111dcb8c4edf4ec8a6be44c7fb378bddf1d5c10e0911fd2807df5e48"
+      url "https://github.com/dh85/spotify-playlist/releases/download/v0.5.0/spotify-playlist_0.5.0_linux_amd64.tar.gz"
+      sha256 "7f561315911303142ded5e52ffc84ac417325fdbc15f7ac6e7fd8163a1eb58bc"
       define_method(:install) do
         bin.install "spotify-playlist"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dh85/spotify-playlist/releases/download/v0.4.0/spotify-playlist_0.4.0_linux_arm64.tar.gz"
-      sha256 "806c65e2e2c913634d0c036658a9a2d212305921a57f747e5b916a8568977c91"
+      url "https://github.com/dh85/spotify-playlist/releases/download/v0.5.0/spotify-playlist_0.5.0_linux_arm64.tar.gz"
+      sha256 "f5d08b2b70c2f29e5add6cd5d565534402b696f2ec20431a7010b4aa9f250ae1"
       define_method(:install) do
         bin.install "spotify-playlist"
       end
